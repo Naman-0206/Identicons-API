@@ -17,6 +17,4 @@ async def generate_identicon(size: int = Query(100, title="Size of the Avatar"))
     return Response(content=randomAvatar(size), media_type="image/png")
 
 
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=10000)
+
